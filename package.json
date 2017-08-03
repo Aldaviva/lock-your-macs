@@ -1,0 +1,28 @@
+{
+    "name": "lock-your-macs",
+    "version": "0.0.0",
+    "author": "Ben Hutchison <ben@aldaviva.com>",
+    "description": "Check if Mac OS is currently locked.",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aldaviva/lock-your-macs"
+    },
+    "main": "src/main/js/index",
+    "dependencies": {
+        "nan": "2.6.2"
+    },
+    "devDependencies": {
+        "mocha": "3.2.0"
+    },
+    "scripts": {
+        "install": "node-gyp rebuild > build_log.txt 2>&1 || exit 0",
+        "test": "node node_modules/mocha/bin/_mocha src/test/js"
+    },
+    "keywords": [
+        "mac",
+        "macos",
+        "lock"
+    ],
+    "gypfile": true
+}
